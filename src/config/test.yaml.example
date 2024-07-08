@@ -1,0 +1,11 @@
+ckpt: "../ckpt/model.ckpt"
+T1_zero: "../example/BraTS20_Training_186_t1.nii.gz"
+T1_low: "../example/BraTS20_Training_186_prediction_0.2.nii.gz"
+output_path: ../results
+fast: False
+
+gpu: ""
+
+hydra:
+    job:
+        chdir: False

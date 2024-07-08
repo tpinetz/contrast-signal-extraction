@@ -1,0 +1,29 @@
+name: ca
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - imageio
+  - matplotlib
+  - pydicom
+  - numpy
+  - python=3.9
+  - scipy
+  - scikit-image
+  - scikit-learn
+  - statsmodels
+  - pandas
+  - tqdm
+  - gitpython
+  - h5py
+  - hydra-core
+  - flake8
+  - pip
+  - pip:
+    - SimpleITK
+    - itk-elastix
+    - tensorboard
+    - torch
+    - torchvision
+    - --extra-index-url https://download.pytorch.org/whl/cu116
+    - pytorch-lightning

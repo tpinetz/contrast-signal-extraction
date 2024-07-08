@@ -1,0 +1,16 @@
+type:                 "condgatedunet"
+in_channels:          3
+channels:             32
+out_channels:         1
+norm_fn:              "none"
+pool_type:            "conv"
+attn_enable:          true
+attn_heads:           4
+attn_size:            3
+
+normalize_input:      true
+ref_std:              0.1
+
+in_cond_channels:     8
+cond_channels:        128
+cond_layers:          2

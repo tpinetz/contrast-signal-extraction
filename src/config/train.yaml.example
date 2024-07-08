@@ -1,0 +1,57 @@
+paths:
+    hdf5:            "/data/contrastagent/hdf5"
+    result_dir:      "/data/contrastagent/results"
+    train_csv:       "/data/contrastagent/datasets/train_set_pat_no10p.csv"
+    val_csv:         "/data/contrastagent/datasets/val_set_pat_no10p.csv"
+    mm_location_csv: "/home/kobler/contrastagent/notebooks/mm_selection_2023_01_30.csv"
+
+data:
+    inputs: ["T1_low", "T1_low_std"] 
+    condition: ["Dose", "Percent", "Field strength", "contrastagent", "scaling factors", "Noise level"]
+    radio_reg_input:    true
+    sub_target:         true
+    sub_threshold:      0
+    sub_adaptive:       1.
+    radio_reg_target:   true
+    add_grad:           true
+    add_smooth:         true
+    adaptive_threshold: 1.
+    nyul_normalization: false
+    standard_scale:     []
+    augmentation_probability: 0.5
+    psignal:
+        x:              [1, 4]
+        p:              [0.01, 0.99]
+
+train:
+    batch_size:     20
+    patch_size:     96
+    mm_probability: 0.1
+    use_weighted_sampling: True
+    gpu:            [0,1]
+    comment:        ""
+    resume:         false
+    criterion:      "huber"
+    beta:           0.01
+    w0:             .01
+    w1:             1.
+    w2:             1.
+    w3:             1.
+    border:         8
+    num_log:        1000
+    num_save:       10000
+
+optim:
+    learning_rate:  1.e-4
+    num_iter:       400000
+    gamma:          0.75
+    milestones:     [50000, 100000, 200000, 300000]
+
+defaults:
+    - _self_
+    - model:    condunet
+
+hydra:
+    run: 
+        dir: ${paths.result_dir}/lowdosebase/${now:%Y-%m-%d_%H-%M-%S}_nc-${model.channels}_lr-${format:${optim.learning_rate},.2e}_border-${train.border}_gamma-${optim.gamma}_loss=${train.criterion}_l1-${train.w1}_l2-${train.w2}_l3-${train.w3}_at-${data.adaptive_threshold}_sat-${data.sub_adaptive}${train.comment}
+
