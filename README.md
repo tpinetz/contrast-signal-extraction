@@ -16,7 +16,7 @@ The used environment is described in the file `requirements.yml` and a virtual e
 
 ## Example Scan
 
-We used "Faithful Synthesis of Low-Dose Contrast-Enhanced Brain MRI Scans Using Noise-Preserving Conditional GANs." by Pinetz, Kobler et al. [MICCAI 2023] to produce an example scan which is used to showcase the capabilities.
+We used "Faithful Synthesis of Low-Dose Contrast-Enhanced Brain MRI Scans Using Noise-Preserving Conditional GANs." by Pinetz, Kobler et al. [MICCAI 2023][^1] to produce an example scan which is used to showcase the capabilities.
 The scan is located in the example folder.
 
 
@@ -25,3 +25,5 @@ The scan is located in the example folder.
 If you use anything from this repository for your own research, please cite:
 
 - *Haase, Robert and Pinetz, Thomas and Kobler, Erich and Bendella, Zeynep and Gronemann, Christian and Paech, Daniel and Radbruch, Alexander and Effland, Alexander and Deike, Katerina.* (2024) **Artificial T1-weighted Post-Contrast Brain MRI: A Deep Learning Method for Contrast Signal Extraction**. In: Investigative radiology published ahead of print.
+
+  [^1]: https://github.com/tpinetz/low-dose-gadolinium-mri-synthesis
