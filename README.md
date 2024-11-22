@@ -1,6 +1,7 @@
 # contrast-signal-extraction
 
-Code for "Artificial T1-weighted Post-Contrast Brain MRI: A Deep Learning Method for Contrast Signal Extraction" in Investigative Radiology 2024 by Haase, Pinetz et al.
+Code for "Artificial T1-weighted Post-Contrast Brain MRI: A Deep Learning Method for Contrast Signal Extraction" (tag v1.0) in Investigative Radiology 2024 by Haase, Pinetz et al.
+Code for "Metastasis Detection Using True and Artificial T1-Weighted Postcontrast Images in Brain MRI" in Investigative Radiology 2024 by Haase, Pinetz et al. will be posted soon.
 
 
 ## Test script
@@ -22,8 +23,10 @@ The scan is located in the example folder.
 
 ### Citation
 
-If you use anything from this repository for your own research, please cite:
+If you use the code from this repository for your own research, please cite the following studies:
 
-- *Haase, Robert and Pinetz, Thomas and Kobler, Erich and Bendella, Zeynep and Gronemann, Christian and Paech, Daniel and Radbruch, Alexander and Effland, Alexander and Deike, Katerina.* (2024) **Artificial T1-weighted Post-Contrast Brain MRI: A Deep Learning Method for Contrast Signal Extraction**. In: Investigative radiology published ahead of print.
+- *Haase, Robert and Pinetz, Thomas and Kobler, Erich and Bendella, Zeynep and Gronemann, Christian and Paech, Daniel and Radbruch, Alexander and Effland, Alexander and Deike, Katerina.* (2024) **Artificial T1-weighted Post-Contrast Brain MRI: A Deep Learning Method for Contrast Signal Extraction**. In: Investigative radiology.
+- *Haase, Robert and Pinetz, Thomas and Kobler, Erich and Bendella, Zeynep and Paech, Daniel and Clauberg, Ralph and ... and Deike, Katerina* (2024) **Metastasis Detection Using True and Artificial T1-Weighted Postcontrast Images in Brain MRI**. In: Investigative radiology published ahead of print.
+- *Pinetz, Thomas and Kobler, Erich and Haase, Robert and Luetkens. Julian A. and Meetschen, Mathias, and Haubold, Johannes and Deuschl, Cornelius and Radbruch, Alexander and Deike, Katerina and and Effland, Alexander* (2024) **Gadolinium dose reduction for brain MRI using conditional deep learning**. In: arXiv.
 
-  [^1]: https://github.com/tpinetz/low-dose-gadolinium-mri-synthesis
+[^1]: https://github.com/tpinetz/low-dose-gadolinium-mri-synthesis
