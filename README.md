@@ -1,12 +1,13 @@
 # contrast-signal-extraction
 
 Code for "Artificial T1-weighted Post-Contrast Brain MRI: A Deep Learning Method for Contrast Signal Extraction" (tag v1.0, model.ckpt) in Investigative Radiology 2024 by Haase, Pinetz et al.
+
 Code for "Metastasis Detection Using True and Artificial T1-Weighted Postcontrast Images in Brain MRI" (tag v2.0, model\_33p.ckpt) in Investigative Radiology 2024 by Haase, Pinetz et al..
 
 
 ## Test script
 
-The file `src/test.py` is used to improve the contrast of 20p images.
+The file `src/test.py` is used to improve the contrast of T1 weighted post contrast enanced images.
 To execute the script the `.yml.exmaple` have to renamed to `.yml` and the paths have to be adjusted.
 The config and paths are defined in `src/config/test.yml`.
 
